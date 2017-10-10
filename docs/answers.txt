@@ -1,0 +1,31 @@
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 415 bytes | 415.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/spanky3449/Assignment1
+   d705a3b..8fbeb36  master -> master
+
+9, I used git rev-list --all --count
+
+Wed Sep 27 16:31:42 2017 -0500, I used git log -1 .gitignore
+
+cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+
+Allows a programmer to make changes to repository without making 
+changes to original. Also allows different ways to to run something 
+to be in the same repository.
+
+Status displays paths that have differences between index file and
+current head commit. Log shows commit logs.
+
+git log --follow Weapon.h
+
+git log --grap="file"
+
+Inheritance is where a subclass inherits the functions and variables 
+of its parent class. Polymorphism is the ability of a class member to 
+take on multiple forms. Encapulation restricts access to an objects 
+member data or function.
