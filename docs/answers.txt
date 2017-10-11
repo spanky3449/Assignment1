@@ -27,5 +27,10 @@ git log --grap="file"
 
 Inheritance is where a subclass inherits the functions and variables 
 of its parent class. Polymorphism is the ability of a class member to 
-take on multiple forms. Encapulation restricts access to an objects 
-member data or function.
+take on multiple forms. Encapulation means the variables of an object can
+only be affected through functions.
+
+The prototype is using polymorphism because the hit function can be applied
+to multiple types of weapons with each having a different effect. Encapsulation
+is used because there is not direct handling of weapon variables and a weapon 
+object is made through the weapon factory class.
