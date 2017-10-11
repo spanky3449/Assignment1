@@ -9,6 +9,8 @@ public:
    CrazyRandomSword() : Weapon("Crazy random sword", getHP()) {
    }
 
+   double getHP();
+
    virtual ~CrazyRandomSword() {};
 
    virtual double hit(double armor);
