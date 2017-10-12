@@ -1,9 +1,6 @@
-#include "CrazyRandomSword.cpp"
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "CrazyRandomSword.h"
 
-double CrazyRandomSwordgetHP() {
+double CrazyRandomSword::getHP() {
    double hp;
    srand(time(NULL));
    hp = rand() % 91 + 10;
@@ -11,10 +8,11 @@ double CrazyRandomSwordgetHP() {
 }
 
 double CrazyRandomSword::hit(double armor) {
-   double ignored, damage;
+   double damage;
+   int ignored, half = armor/2;
    srand(time(NULL));
-   ignored = rand() % armor/2;
-   damage = hitpoints - (armor - ignored);
+   ignored = rand() % half;
+   damage = hitPoints - (armor - ignored);
    if (damage < 0)
 	return 0;
    return damage;

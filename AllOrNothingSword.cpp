@@ -1,7 +1,8 @@
-#include "AllOrNothingSword.cpp"
+#include "AllOrNothingSword.h"
 
 double AllOrNothingSword::hit(double armor) {
-   if (armor % 2 == 0)
+   int armorRounded = armor;
+   if (armorRounded % 2 == 0)
 	return hitPoints;
    else
 	return 0;
